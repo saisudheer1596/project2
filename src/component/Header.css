@@ -1,18 +1,3 @@
-div {
-    display: block;
-}
-
-body {
-    font-family: Montserrat, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 25px;
-    color: #666;
-    overflow-x: hidden !important;
-    -webkit-font-smoothing: antialiased;
-}
-
-
 .page-header {
     width: 100%;
     margin: 0;
@@ -119,7 +104,7 @@ a {
 a:-webkit-any-link {
     color: -webkit-link;
     cursor: pointer;
-    text-decoration: underline;
+    
 }
 
 .logo-wrapper a img .dark-logo {
@@ -271,11 +256,19 @@ ul {
     display: block;
 }
 
-.light-header .page-header>div:not(.sticky-header):not(.fixed) .side-menu-button-opener {
+.light-header .page-header>div:not(.sticky-header):not(.fixed) .side-menu-button-opener,
+.light-header .top-bar .side-menu-button-opener {
     color: #fff !important;
 }
 
-.side-menu-button-opener {
+.light-header .page-header>div:not(.sticky-header):not(.fixed) .side-menu-button-opener.opened,
+.light-header .page-header>div:not(.sticky-header):not(.fixed) .side-menu-button-opener:hover {
+    color: #f9556d !important;
+}
+
+.side-menu-button-opener,
+.side-menu-button-opener .side-menu-icon,
+.side-menu-button-opener .side-menu-title {
     display: inline-block;
     position: relative;
     vertical-align: middle;
